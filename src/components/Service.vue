@@ -23,23 +23,23 @@ export default {
             serviceItem: [
                 {
                     text: 'DIGITAL COMICS',
-                    img: './../assets/buy-comics-digital-comics.png'
+                    img: require('@/assets/buy-comics-digital-comics.png')
                 },
                 {
                     text: 'DC MERCHANDISE',
-                    img: '../assets/buy-comics-merchandise.png'
+                    img: require('../assets/buy-comics-merchandise.png')
                 },
                 {
                     text: 'SUBSCRIPTION',
-                    img: '../assets/buy-comics-subscriptions.png'
+                    img: require('../assets/buy-comics-subscriptions.png')
                 },
                 {
                     text: 'COMIC SHOP LOCATOR',
-                    img: '../assets/buy-comics-shop-locator.png'
+                    img: require('../assets/buy-comics-shop-locator.png')
                 },
                 {
                     text: 'DC POWER VISA',
-                    img: '../assets/buy-dc-power-visa.svg'
+                    img: require('../assets/buy-dc-power-visa.svg')
                 },
             ]
         }
@@ -63,6 +63,9 @@ export default {
             img {
                 height: 40%;
                 margin-right: 15px;
+            }
+            &:last-child img {
+                height: 25%;
             }
             h5 {
                 font-family: 'Arial', sans-serif;

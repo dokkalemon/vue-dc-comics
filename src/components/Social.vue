@@ -27,27 +27,27 @@ export default {
             socialLink: [
                 {   
                     text: 'Facebook',
-                    img: './assets/footer-facebook.png',
+                    img: require('@/assets/footer-facebook.png'),
                     url: 'facebook'
                 },
                 {
                     text: 'Twitter',
-                    img: './assets/footer-twitter.png',
+                    img: require('@/assets/footer-twitter.png'),
                     url: 'facebook'
                 },
                 {
                     text: 'Youtube',
-                    img: '@/assets/footer-youtube.png',
+                    img: require('@/assets/footer-youtube.png'),
                     url: 'facebook'
                 },
                 {
                     text: 'Pinterest',
-                    img: '@/assets/footer-pinterest.png',
+                    img: require('@/assets/footer-pinterest.png'),
                     url: 'facebook'
                 },
                 {
                     text: 'Periscope',
-                    img: '@/assets/footer-periscope.png',
+                    img: require('@/assets/footer-periscope.png'),
                     url: 'facebook'
                 },
             ]
