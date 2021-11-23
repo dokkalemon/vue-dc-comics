@@ -1,0 +1,33 @@
+/*------------- UTILITIES -------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #1c1c1c;
+    font-family: 'Arial', sans-serif;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.conteiner {
+    width: 1270px;
+    margin: 0 auto; 
+}
+
+.debug {
+    border: 1px solid red
+}
+
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img {
+    height: 100%
+}
