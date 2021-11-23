@@ -8,6 +8,9 @@
 
     <!-- Footer -->
     <Footer />
+
+    <!-- Social -->
+    <Social />
   </div>
 </template>
 
@@ -15,6 +18,7 @@
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
+import Social from './components/Social.vue'
 
 
 export default {
@@ -22,7 +26,8 @@ export default {
   components: {
     Header,
     Main,
-    Footer
+    Footer,
+    Social
   }
 }
 </script>

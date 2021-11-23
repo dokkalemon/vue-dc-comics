@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/styles/variables';
+
     main {
         height: 150px;
         color: white;

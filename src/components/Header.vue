@@ -79,6 +79,10 @@ header {
                 &:hover a {
                     color: $primary-color;
                 }
+
+                &:last-child {
+                    margin: 0;
+                }
             }
         }
     }
