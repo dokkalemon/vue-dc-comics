@@ -7,7 +7,7 @@
             <div class="social-icon">
                 <ul>
                 <h3>FOLLOW US</h3>
-                    <li v-for="(link, index) in socialLink" :key="`link-${index}`">
+                    <li v-for="(link, index) in socialLink" :key="`socialLink-${index}`">
                         <img :src="link.img" alt="">
                     </li>
                     
@@ -27,12 +27,12 @@ export default {
             socialLink: [
                 {   
                     text: 'Facebook',
-                    img: '../assets/footer-facebook.png',
+                    img: './assets/footer-facebook.png',
                     url: 'facebook'
                 },
                 {
                     text: 'Twitter',
-                    img: '@/assets/footer-twitter.png',
+                    img: './assets/footer-twitter.png',
                     url: 'facebook'
                 },
                 {
@@ -89,6 +89,7 @@ export default {
                 }
                 li {
                     margin-left: 20px;
+                    
                 }
             }
         }

@@ -6,6 +6,9 @@
     <!-- Main -->
     <Main />
 
+    <!-- Service -->
+    <Service />
+
     <!-- Footer -->
     <Footer />
 
@@ -18,6 +21,7 @@
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
+import Service from './components/Service.vue'
 import Social from './components/Social.vue'
 
 
@@ -27,7 +31,8 @@ export default {
     Header,
     Main,
     Footer,
-    Social
+    Social,
+    Service
   }
 }
 </script>
