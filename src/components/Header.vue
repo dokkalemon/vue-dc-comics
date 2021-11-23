@@ -59,7 +59,7 @@ header {
 
             li {
                 height: 100%;
-                margin: 0 10px;
+                margin: 0 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
