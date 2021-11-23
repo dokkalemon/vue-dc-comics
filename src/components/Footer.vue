@@ -5,47 +5,24 @@
                 <div class="footer-nav-item">
                     <h3>DC COMICS</h3>
                     <ul>
-                        <li>Character</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>Tv</li>
-                        <li>Games</li>
-                        <li>Collectibles</li>
-                        <li>Videos</li>
-                        <li>Fans</li>
-                        <li>News</li>
-                        <li>Shop</li>
+                        <li v-for="(link, index) in dcComicsLink" :key="`dcComicsLink-${index}`"><a href="link.url">{{link.text}}</a></li>
+                        
                     </ul>
                     <h3>SHOP</h3>
                     <ul>
-                        <li>Shop DC</li>
-                        <li>Shop DC Collectibles</li>
+                        <li v-for="(link, index) in shopLink" :key="`shopLink-${index}`"><a href="link.url">{{link.text}}</a></li>  
                     </ul>
                 </div>
                 <div class="footer-nav-item">
                     <h3>DC</h3>
                     <ul>
-                        <li>Terms of Use</li>
-                        <li>Privacy policy (New)</li>
-                        <li>Ad Choices</li>
-                        <li>Advertising</li>
-                        <li>Jobs</li>
-                        <li>Subscriptions</li>
-                        <li>Talent Workshop</li>
-                        <li>CPSC Certificates</li>
-                        <li>Ratings</li>
-                        <li>Shop Help</li>
-                        <li>Contact Us</li>
+                        <li v-for="(link, index) in dcLink" :key="`dcLink-${index}`"><a href="link.url">{{link.text}}</a></li>  
                     </ul>
                 </div>
                 <div class="footer-nav-item">
                     <h3>SITES</h3>
                     <ul>
-                        <li>DC</li>
-                        <li>MAD Magazine</li>
-                        <li>DC Kids</li>
-                        <li>DC universe</li>
-                        <li>DC Power Visa</li>    
+                        <li v-for="(link, index) in sitesLink" :key="`dcComicsLink-${index}`"><a href="link.url">{{link.text}}</a></li>
                     </ul>
                 </div>
                 
@@ -74,7 +51,163 @@
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'Footer',
+
+    data() {
+        return {
+            dcComicsLink: [
+                 {
+                    text: 'Characters',
+                    url: '/characters',
+                    current: true
+                },
+                {
+                    text: 'Comics',
+                    url: '/comics',
+                    current: true
+                },
+                {
+                    text: 'Movies',
+                    url: '/movies',
+                    current: true
+                },
+                {
+                    text: 'Tv',
+                    url: '/tv',
+                    current: true
+                },
+                {
+                    text: 'Games',
+                    url: '/games',
+                    current: true
+                },
+                {
+                    text: 'Collectibles',
+                    url: '/collectibles',
+                    current: true
+                },
+                {
+                    text: 'Videos',
+                    url: '/videos',
+                    current: true
+                },
+                {
+                    text: 'Fans',
+                    url: '/fans',
+                    current: true
+                },
+                {
+                    text: 'News',
+                    url: '/news',
+                    current: true
+                },
+                {
+                    text: 'Shop',
+                    url: '/shop',
+                    current: true
+                },
+            ],
+
+            shopLink: [
+                {
+                    text: 'Shop DC',
+                    url: '/shop-dc',
+                    current: true
+                },
+                {
+                    text: 'Shop DC Collectibles',
+                    url: '/shop-dc-collectibles',
+                    current: true
+                }
+            ],
+
+            dcLink: [
+                {
+                    text: 'Terms of Use',
+                    url: '/terms-of-use',
+                    current: true,
+                },
+                {
+                    text: 'Privacy policy (New)',
+                    url: '/privacy-policy',
+                    current: true,
+                },
+                {
+                    text: 'Ad Choise',
+                    url: '/ad-choise',
+                    current: true,
+                },
+                {
+                    text: 'Advertising',
+                    url: '/advertising',
+                    current: true,
+                },
+                {
+                    text: 'Jobs',
+                    url: '/jobs',
+                    current: true,
+                },
+                {
+                    text: 'Subscription',
+                    url: '/subscription',
+                    current: true,
+                },
+                {
+                    text: 'Talent Workshop',
+                    url: '/talent-workshop',
+                    current: true,
+                },
+                {
+                    text: 'CPSC Certificates',
+                    url: '/cpsc-certificates',
+                    current: true,
+                },
+                {
+                    text: 'Ratings',
+                    url: '/ratings',
+                    current: true,
+                },
+                {
+                    text: 'Shop Help',
+                    url: '/shop-help',
+                    current: true,
+                },
+                {
+                    text: 'Contact Us',
+                    url: '/contact-us',
+                    current: true,
+                },
+                ],
+
+            sitesLink: [
+                {
+                    text: 'DC',
+                    url: '/dc',
+                    current: true,
+                },
+                {
+                    text: 'MAD Magazine',
+                    url: '/mad-magazine',
+                    current: true,
+                },
+                {
+                    text: 'DC Kids',
+                    url: '/dc-kids',
+                    current: true,
+                },
+                {
+                    text: 'DC universe',
+                    url: '/dc-universe',
+                    current: true,
+                },
+                {
+                    text: 'DC Power Visa',
+                    url: '/dc-power-visa',
+                    current: true,
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -107,12 +240,16 @@ footer {
                 ul {
                     list-style: none;
                     li {
-                        color: white;
                         font-family: 'Arial', sans-serif;
                         font-weight: 200;
                         font-size: 12px;
                         color: #aaa;
                         line-height: 20px;
+                        a {
+                            color: #aaa;
+                            text-decoration: none;
+
+                        }
                     }
                 }
             }

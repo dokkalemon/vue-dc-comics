@@ -7,11 +7,10 @@
             <div class="social-icon">
                 <ul>
                 <h3>FOLLOW US</h3>
-                    <li><img src="@/assets/footer-facebook.png" alt=""></li>
-                    <li><img src="@/assets/footer-twitter.png" alt=""></li>
-                    <li><img src="@/assets/footer-youtube.png" alt=""></li>
-                    <li><img src="@/assets/footer-pinterest.png" alt=""></li>
-                    <li><img src="@/assets/footer-periscope.png" alt=""></li>
+                    <li v-for="(link, index) in socialLink" :key="`link-${index}`">
+                        <img :src="link.img" alt="">
+                    </li>
+                    
                 </ul>
             </div>
 
@@ -21,7 +20,39 @@
 
 <script>
 export default {
-    name: 'Social'
+    name: 'Social',
+
+    data() {
+        return {
+            socialLink: [
+                {   
+                    text: 'Facebook',
+                    img: '../assets/footer-facebook.png',
+                    url: 'facebook'
+                },
+                {
+                    text: 'Twitter',
+                    img: '@/assets/footer-twitter.png',
+                    url: 'facebook'
+                },
+                {
+                    text: 'Youtube',
+                    img: '@/assets/footer-youtube.png',
+                    url: 'facebook'
+                },
+                {
+                    text: 'Pinterest',
+                    img: '@/assets/footer-pinterest.png',
+                    url: 'facebook'
+                },
+                {
+                    text: 'Periscope',
+                    img: '@/assets/footer-periscope.png',
+                    url: 'facebook'
+                },
+            ]
+        }
+    }
 }
 </script>
 
