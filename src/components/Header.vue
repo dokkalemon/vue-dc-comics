@@ -6,16 +6,8 @@
           </div>
           <div class="nav">
               <ul>
-                  <li><a href="">Characters</a></li>
-                  <li><a href="">Comics</a></li>
-                  <li><a href="">Movies</a></li>
-                  <li><a href="">Tv</a></li>
-                  <li><a href="">Games</a></li>
-                  <li><a href="">Collectibles</a></li>
-                  <li><a href="">Videos</a></li>
-                  <li><a href="">Fans</a></li>
-                  <li><a href="">News</a></li>
-                  <li><a href="">Shop</a></li>
+                  <li v-for="(link, index) in navLink" :key="`link-${index}`" ><a href="link.url">{{link.text}}</a></li>
+                  
               </ul>
           </div>
       </div>
@@ -25,6 +17,63 @@
 <script>
 export default {
     name: 'Header',
+
+    data() {
+        return {
+            navLink: [
+                {
+                    text: 'Characters',
+                    url: '/characters',
+                    current: true
+                },
+                {
+                    text: 'Comics',
+                    url: '/comics',
+                    current: true
+                },
+                {
+                    text: 'Movies',
+                    url: '/movies',
+                    current: true
+                },
+                {
+                    text: 'Tv',
+                    url: '/tv',
+                    current: true
+                },
+                {
+                    text: 'Games',
+                    url: '/games',
+                    current: true
+                },
+                {
+                    text: 'Collectibles',
+                    url: '/collectibles',
+                    current: true
+                },
+                {
+                    text: 'Videos',
+                    url: '/videos',
+                    current: true
+                },
+                {
+                    text: 'Fans',
+                    url: '/fans',
+                    current: true
+                },
+                {
+                    text: 'News',
+                    url: '/news',
+                    current: true
+                },
+                {
+                    text: 'Shop',
+                    url: '/shop',
+                    current: true
+                },
+            ]
+        }
+    }
 
 }
 </script>
