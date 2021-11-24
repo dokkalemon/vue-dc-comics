@@ -1,5 +1,5 @@
 <template>
-  <section class="label conteiner">
+  <section class="label conteiner px-15">
       <div class="label-conteiner">
           <h3>{{ title }}</h3>
       </div>
