@@ -6,9 +6,8 @@
     <!-- Hero -->
     <Hero />
 
-    <!-- Hero -->
+    <!-- Label -->
     <Label title="Current Series"/>
-    
 
     <!-- Main -->
     <Main />
@@ -34,6 +33,7 @@ import Hero from './components/Hero.vue'
 import Label from './components/Label.vue'
 
 
+
 export default {
   name: 'App',
   components: {
@@ -43,7 +43,7 @@ export default {
     Social,
     Service,
     Hero,
-    Label
+    Label,
   }
 }
 </script>
@@ -51,6 +51,7 @@ export default {
 <style lang="scss">
 @import '@/styles/utilities';
 @import '@/styles/variables';
+
 
 
 </style>

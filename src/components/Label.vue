@@ -22,15 +22,16 @@ export default {
 .label {
     display: flex;
     position: relative;
-    top: -25px;
+    top: -30px;
     
     .label-conteiner {
         background-color: $primary-color;
-        padding: 10px 20px;
+        padding: 10px 30px;
         h3 {
             text-transform: uppercase;
             color: white;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 30px;
         }
 
     }
