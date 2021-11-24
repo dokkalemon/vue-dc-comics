@@ -83,6 +83,7 @@ export default {
 
 header {
     background-color: white;
+    position: fixed;
     .header {
         height: 120px;
         display: flex;

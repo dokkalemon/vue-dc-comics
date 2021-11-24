@@ -3,6 +3,9 @@
     <!-- Header -->
     <Header />
 
+    <!-- Hero -->
+    <Hero />
+
     <!-- Main -->
     <Main />
 
@@ -23,6 +26,7 @@ import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
 import Service from './components/Service.vue'
 import Social from './components/Social.vue'
+import Hero from './components/Hero.vue'
 
 
 export default {
@@ -32,7 +36,8 @@ export default {
     Main,
     Footer,
     Social,
-    Service
+    Service,
+    Hero
   }
 }
 </script>
