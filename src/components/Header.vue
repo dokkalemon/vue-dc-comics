@@ -84,6 +84,7 @@ export default {
 header {
     background-color: white;
     position: fixed;
+    z-index: 999;
     .header {
         height: 120px;
         display: flex;

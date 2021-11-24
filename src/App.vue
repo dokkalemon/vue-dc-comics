@@ -6,6 +6,10 @@
     <!-- Hero -->
     <Hero />
 
+    <!-- Hero -->
+    <Label title="Current Series"/>
+    
+
     <!-- Main -->
     <Main />
 
@@ -27,6 +31,7 @@ import Footer from './components/Footer.vue'
 import Service from './components/Service.vue'
 import Social from './components/Social.vue'
 import Hero from './components/Hero.vue'
+import Label from './components/Label.vue'
 
 
 export default {
@@ -37,7 +42,8 @@ export default {
     Footer,
     Social,
     Service,
-    Hero
+    Hero,
+    Label
   }
 }
 </script>
